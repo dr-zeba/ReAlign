@@ -1,0 +1,65 @@
+<div class="booking-form-container">
+    <h2>Book Your Consultation</h2>
+    <p>Take the first step towards recovery.</p>
+
+    <form id="bookingForm" novalidate>
+        <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" required placeholder="John Doe">
+            <span class="error-msg" id="nameError">Please enter your full name</span>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required placeholder="john@example.com">
+            <span class="error-msg" id="emailError">Please enter a valid email</span>
+        </div>
+
+        <div class="form-group">
+            <label for="contact">Contact Number</label>
+            <input type="tel" id="contact" name="contact" required placeholder="+91 98765 43210"
+                pattern="[0-9+\s-]{10,}">
+            <span class="error-msg" id="contactError">Please enter a valid phone number</span>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="date">Preferred Date</label>
+                <input type="date" id="date" name="date" required>
+                <span class="error-msg" id="dateError">Please select a future date</span>
+            </div>
+
+            <div class="form-group">
+                <label for="time">Preferred Time</label>
+                <select id="time" name="time" required>
+                    <option value="">Select Time</option>
+                    <option value="09:00">09:00 AM</option>
+                    <option value="10:00">10:00 AM</option>
+                    <option value="11:00">11:00 AM</option>
+                    <option value="12:00">12:00 PM</option>
+                    <option value="14:00">02:00 PM</option>
+                    <option value="15:00">03:00 PM</option>
+                    <option value="16:00">04:00 PM</option>
+                    <option value="17:00">05:00 PM</option>
+                    <option value="18:00">06:00 PM</option>
+                </select>
+                <span class="error-msg" id="timeError">Please select a time</span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="therapyType">Therapy Type</label>
+            <select id="therapyType" name="therapyType" required>
+                <option value="">Select Option</option>
+                <option value="Initial Consultation">Initial Consultation</option>
+                <option value="Manual Therapy">Manual Therapy</option>
+                <option value="Sports Rehab">Sports Rehab</option>
+                <option value="Post-Op Care">Post-Op Care</option>
+                <option value="Other">Other</option>
+            </select>
+            <span class="error-msg" id="typeError">Please select a therapy type</span>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Confirm Booking</button>
+    </form>
+</div>
